@@ -140,6 +140,18 @@ Architecture
     | Also, I will construct the workflow with my C++ plugins in high level scipts, which can be easily used in Godot editor,
      and programmers are able to call the C++ plugins and write their own scipts.
 
+Testing
+    | For continuous testing, I introduce the following 2 method to help with it.
+    
+    1.  | Input Sequence Recording: 
+        | We may want to use the consistent sequence to compare the difference of methods.
+            Hence the consistent sequence of input and physic status like velocities needs to be  recorded.
+    2.  | Substitutable Cost function and Update: 
+        | Due to the time consuming of complilation, I want to make the Update and Cost function customizable in the Godot scipt,
+            and this will speed up the development.
+        | Additionally, users are able to script their own method too.
+
+
 Schedule
 ========
 
@@ -150,9 +162,10 @@ Schedule
     - Basic demo scene with avatar controll and animation
 - 05/09 ~ 05/15
     - Basic C++ plugin with skeleton animation controll
-    - Label marking plugin for animation in editor
+    - Input and physic sequence recording system
 - 05/16 ~ 05/23
     - Motion Matching for basic movement C++ plugin in regardless of labeled animation
+    - Label marking plugin for animation in editor
 - 05/24 ~ 06/16
     - Motion Matching with labeled animation
     - Motion Matching for more actions such as jumping, rolling
