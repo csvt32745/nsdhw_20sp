@@ -98,10 +98,10 @@ Compiling
     
     - Source codes of C++ modules
     - Importing-script of engine
-    - A SCons scipt 
+    - A SCons script 
 
 Usage
-    The usage of plugin is the same in C++ or scipting in engine.
+    The usage of plugin is the same in C++ or scripting in engine.
     And the following C++ classes are going to be used in in-editor script.
 
     - `Class Pose`
@@ -134,11 +134,11 @@ Engineering infrastructure
 
 Architecture
     | I will implement Motion Matching as a C++ plugin in `Godot <https://godotengine.org/>`_ Engine,
-    | Though scipts in Godot are written in High-Level language like C# and its own language - gdscript,
+    | Though scripts in Godot are written in High-Level language like C# and its own language - gdscript,
         Godot is constructed with C++. Thefore I'm able to work in C++, with basic structures and functions offered by Godot.
     
-    | Also, I will construct the workflow with my C++ plugins in high level scipts, which can be easily used in Godot editor,
-     and programmers are able to call the C++ plugins and write their own scipts.
+    | Also, I will construct the workflow with my C++ plugins in high level scripts, which can be easily used in Godot editor,
+     and programmers are able to call the C++ plugins and write their own scripts.
 
 Testing
     | For continuous testing, I introduce the following 2 method to help with it.
@@ -147,7 +147,7 @@ Testing
         | We may want to use the consistent sequence to compare the difference of methods.
             Hence the consistent sequence of input and physic status like velocities needs to be  recorded.
     2.  | Substitutable Cost function and Update: 
-        | Due to the time consuming of complilation, I want to make the Update and Cost function customizable in the Godot scipt,
+        | Due to the time consuming of complilation, I want to make the Update and Cost function customizable in the Godot script,
             and this will speed up the development.
         | Additionally, users are able to script their own method too.
 
